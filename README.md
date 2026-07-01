@@ -20,13 +20,16 @@ pip install godot-gut-mcp
 
 ## Configuración en Claude Desktop
 
-Añade esto a tu archivo de configuración de Claude Desktop:
+## Configuración en Claude Desktop
+
+Añade esto a tu archivo `claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
     "godot-gut": {
-      "command": "godot-gut-mcp",
+      "command": "uv",
+      "args": ["run", "--with", "godot-gut-mcp", "godot-gut-mcp"],
       "env": {
         "GODOT_PATH": "C:/ruta/a/godot.exe",
         "GODOT_PROJECT_PATH": "C:/ruta/a/tu/proyecto"
