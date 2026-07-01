@@ -2,7 +2,7 @@
 name = "godot-gut-mcp"
 version = "0.1.0"
 description = "Servidor MCP que permite ejecutar tests de Godot con GUT desde cualquier IA"
-readme = "README.md"
+readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "brand", email = "brand.diego@proton.me" }]
