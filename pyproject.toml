@@ -1,0 +1,18 @@
+[project]
+name = "godot-gut-mcp"
+version = "0.1.0"
+description = "Servidor MCP que permite ejecutar tests de Godot con GUT desde cualquier IA"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "brand", email = "brand.diego@proton.me" }]
+dependencies = [
+    "mcp[cli]>=1.28.1",
+]
+
+[project.scripts]
+godot-gut-mcp = "godot_gut_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
