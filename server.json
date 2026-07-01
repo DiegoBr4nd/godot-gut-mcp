@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.DiegoBr4nd/godot-gut-mcp",
+  "description": "Servidor MCP que permite ejecutar tests de Godot con GUT desde cualquier IA",
+  "repository": {
+    "url": "https://github.com/DiegoBr4nd/godot-gut-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "godot-gut-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Ruta al ejecutable de Godot (por ejemplo C:/ruta/a/godot.exe)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": false,
+          "name": "GODOT_PATH"
+        },
+        {
+          "description": "Ruta a la carpeta del proyecto de Godot (la que contiene project.godot)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": false,
+          "name": "GODOT_PROJECT_PATH"
+        }
+      ]
+    }
+  ]
+}
