@@ -3,7 +3,7 @@ import os
 
 
 class GutRunner:
-    """Se encarga de hablar con Godot y ejecutar GUT."""
+    """Se comunica con Godot y ejecuta GUT."""
 
     def __init__(self):
         self.godot = os.environ.get("GODOT_PATH", "godot")
