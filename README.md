@@ -1,0 +1,1 @@
+<!-- mcp-name: io.github.DiegoBr4nd/godot-gut-mcp -->
